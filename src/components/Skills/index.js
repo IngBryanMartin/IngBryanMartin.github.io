@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import Loader from 'react-loaders';
-import TextShpere from "./TextShpere";
+import TextShpere from "./TextShpere.js";
 
 const Skills = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -64,9 +64,5 @@ const Skills = () => {
         </>
     )
 }
-
-
-
-
 
 export default Skills
