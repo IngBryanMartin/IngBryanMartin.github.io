@@ -2,8 +2,23 @@ import { Link } from 'react-router-dom';
 import './index.scss';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
-import Logo from './Logo';
+import PhotoDev from '../../assets/images/foto_perfil.png';
 import Loader from 'react-loaders';
+
+function Image() {
+    return (
+        <div className='image-container'>
+        <div class="box">
+        <b></b>
+        <img className='solid-image' src={PhotoDev} alt='Profile dev' />
+        <div class="content">
+              <h2>Bryan Martin Quispe Lavalle<br /><span>Systems and Informatics Engineering</span></h2>
+        </div>
+        </div>
+      </div>
+    )
+  }
+
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -37,7 +52,7 @@ const Home = () => {
                 <h2>Developer / Java Expert / Cybersecurity </h2>
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
-            <Logo />
+            <Image />
         </div>
         <Loader type='ball-scale-multiple' />
         </>
