@@ -8,10 +8,9 @@ import TagCloud from "TagCloud";
 const TextShpere = () => {
   // Animation settings for Text Cloud
   useEffect(() => {
-    return () => {
-      const container = ".tagcloud";
-      const texts = [
-        "HTML",
+    const container = '.tagcloud';
+    const texts = [
+      "HTML",
         "CSS",
         "GIT",
         "JavaScript",
@@ -28,17 +27,16 @@ const TextShpere = () => {
         "PostMan",
         "Arduino",
         "Cybersecurity",
-      ];
+    ];
 
-      const options = {
-        radius: 300,
-        maxSpeed: "normal",
-        initSpeed: "normal",
-        keep: true,
-      };
-
-      TagCloud(container, texts, options);
+    const options = {
+      radius: 300 ,
+      maxSpeed: 'normal',
+      initSpeed: 'normal',
+      keep: true,
     };
+
+    TagCloud(container, texts, options);
   }, []);
 
   return (
