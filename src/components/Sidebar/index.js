@@ -12,27 +12,27 @@ const Sidebar = () => {
 
     return (
         <div className='nav-bar'>
-            <Link className='logo' to='/' onClick={()=>setShowNav(false)}>
+            <Link className='logo' to='/my-portfolio/' onClick={()=>setShowNav(false)}>
                 <img src={LogoS} alt ="logo" />
                 <img className='sub-logo' src={LogoSubtitle} alt ="BryanMDev" /> 
             </Link>
     <nav className={showNav ? 'mobile-show' : ''}>
-        <NavLink exact="true" activeclassname="active" to="/" onClick={() => setShowNav(false)}>
-            <FontAwesomeIcon icon={faHome} color="#49b6d1" />
+        <NavLink exact="true" activeclassname="active" to="/my-portfolio/" onClick={() => setShowNav(false)}>
+            <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
         <NavLink activeclassname="active" className="about-link" to="/about" onClick={() => setShowNav(false)}>
-            <FontAwesomeIcon icon={faUser} color="#49b6d1" />
+            <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
          </NavLink>
          <NavLink activeclassname="active" className="skills-link" to="/skills" onClick={() => setShowNav(false)}>
-            <FontAwesomeIcon icon={faCode} color="#49b6d1" />
+            <FontAwesomeIcon icon={faCode} color="#4d4d4e" />
          </NavLink>
         <NavLink activeclassname="active" className="portfolio-link" to="/portfolio" onClick={() => setShowNav(false)}>
-            <FontAwesomeIcon icon={faSuitcase} color="#49b6d1" />
+            <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink>
         <NavLink activeclassname="active" className="contact-link" to="/contact" onClick={() => setShowNav(false)}>
-            <FontAwesomeIcon icon={faEnvelope} color="#49b6d1" />
+            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
-        <FontAwesomeIcon onClick={() => setShowNav(false)} icon={faClose} color="#49b6d1" size='3x' className='close-icon'/>
+        <FontAwesomeIcon onClick={() => setShowNav(false)} icon={faClose} color="#00ffff" size='3x' className='close-icon'/>
     </nav>  
 
     <ul >
