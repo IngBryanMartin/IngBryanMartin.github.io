@@ -10,15 +10,15 @@ import Skills from './components/Skills';
 function App() {
   return (
     <>
-    <Routes>
-      <Route path="/" element={<Layout />}>
-      <Route path='/my-portfolio' element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='contact' element={<Contact />} />
-        <Route path='skills' element={<Skills />} />
-        <Route path='portfolio' element={<Portfolio />} />
-      </Route>
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="home" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
     </>
   );
 }
