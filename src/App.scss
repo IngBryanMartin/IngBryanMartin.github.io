@@ -33,7 +33,8 @@ textarea {
   height: 5%;
   animation: fadeOut 0.6s ease-in-out 0.6s forwards;
 }
-.loader span{
+
+.loader span {
   position: absolute;
   top: 0;
   left: 0;
@@ -41,7 +42,8 @@ textarea {
   height: 50%;
   transform: rotate(calc(36deg * var(--i)));
 }
-.loader span::before{
+
+.loader span::before {
   content: '';
   position: absolute;
   top: 0;
@@ -53,43 +55,46 @@ textarea {
   border: 4px solid #00efff;
   box-sizing: border-box;
   box-shadow: 0 0 20px #00efff,
-  -30px -30px 0 #00efff,
-  -30px -30px 20px #00efff,
-  30px 30px 0 #00efff,
-  30px 30px 20px #00efff,
-  30px -30px 0 #00efff,
-  30px -30px 20px #00efff,
-  -30px 30px 0 #00efff,
-  -30px 30px 20px #00efff;
+    -30px -30px 0 #00efff,
+    -30px -30px 20px #00efff,
+    30px 30px 0 #00efff,
+    30px 30px 20px #00efff,
+    30px -30px 0 #00efff,
+    30px -30px 20px #00efff,
+    -30px 30px 0 #00efff,
+    -30px 30px 20px #00efff;
   animation: animate 5s linear infinite,
-  colors 2s linear calc(var(--i)*0.1s) infinite;
+    colors 2s linear calc(var(--i)*0.1s) infinite;
   transform-origin: 50px;
 }
 
 @keyframes animate {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes colors {
   0% {
-      filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
   }
+
   100% {
-      filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
   }
 }
 
 /* Animación para desaparecer después de 2 segundos */
 @keyframes fadeOut {
   0% {
-      opacity: 1;
+    opacity: 1;
   }
+
   100% {
-      opacity: 0;
+    opacity: 0;
   }
 }
