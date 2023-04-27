@@ -12,7 +12,7 @@ function Image() {
         <b></b>
         <img className='solid-image' src={PhotoDev} alt='Profile dev' />
         <div class="content">
-              <h2>Bryan Martin Quispe Lavalle<br /><span>Systems and Informatics Engineering</span></h2>
+            <h2>Bryan Martin Quispe Lavalle<br /><span>Systems and Informatics Engineering</span></h2>
         </div>
         </div>
       </div>

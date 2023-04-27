@@ -44,10 +44,10 @@
             i {
                 transition: all 0.3s ease-out;
             }
-    
+
             &:hover {
                 color: #49b6d1;
-    
+
                 svg {
                     opacity: 0;
                 }
@@ -59,7 +59,7 @@
 
             &:after {
                 content: '';
-                font-size: 9px;
+                font-size: 7.5px;
                 letter-spacing: 2px;
                 position: absolute;
                 bottom: 0;
@@ -71,7 +71,7 @@
             }
 
             &:first-child {
-                &::after {
+                &:after {
                     content: 'HOME';
                 }
             }
@@ -112,7 +112,7 @@
         position: absolute;
         bottom: 20px;
         width: 100%;
-        display: block;
+        display:block;
         padding: 0;
         list-style: none;
         text-align: center;
@@ -122,14 +122,74 @@
             a {
                 padding: 7px 0;
                 display: block;
-                font-size: 25px;
+                font-size: 20px;
                 line-height: 16px;
+            }
 
-                &:hover svg {
-                    color: #49b6d1;
-                }
+            &:hover svg {
+                color: #49b6d1;
             }
         }
     }
+}
 
+.hamburger-icon, .close-icon {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-bar { 
+      background: transparent;
+      position: initial;
+      height: auto;
+      min-height: auto;
+  
+       ul, nav {
+        display: none;
+       }
+  
+       nav {
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #090b1b;
+        height: 100%;
+        margin: 0;
+        z-index: 2;
+        position: fixed;
+  
+        a {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        margin-left: 30px;
+        margin-top: 20px;
+        }
+  
+        a:after {
+        opacity: 1;
+        position: initial;
+        width: auto;
+        margin-left: 15PX;
+        margin-top: -12px;
+        color: #49b6d1; 
+        }
+  
+        a svg {
+        opacity: 1 !important;
+        }
+        
+        &.mobile-show {
+            display: block;
+        }
+       }
+
+       .hamburger-icon,
+       .close-icon {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+       }
+    }
 }

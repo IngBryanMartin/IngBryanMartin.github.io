@@ -27,7 +27,7 @@ const renderPortfolio = (portfolio) => {
                     return (
                         <div className='image-box' key={idx}>
                         <img 
-                                src={port.cover}
+                                src={port.image}
                                 className='portfolio-image'
                                 alt='portfolio' />
                         <div className='content'>

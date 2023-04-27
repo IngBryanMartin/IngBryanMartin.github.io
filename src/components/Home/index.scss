@@ -16,7 +16,6 @@
         font-weight: 400;
 
         &::before {
-            // content: '<h1>';
             font-family: 'La Belle Aurore';
             color: #49b6d1;
             font-size: 18px;
@@ -27,7 +26,6 @@
         }
 
         &::after {
-            // content: '<h1>';
             font-family: 'La Belle Aurore';
             color: #49b6d1;
             font-size: 18px;
@@ -199,3 +197,51 @@
     .container .box .sci li a:hover{
         color: rgba(255,255,255,1);
     }
+
+@media screen and (max-width: 1200px) {
+    .tags,
+    .home-page h1::before,
+    .home-page h1::after {
+        display: none;
+    }
+
+    .home-page {
+        .text-zone {
+            position: initial;
+            width: 100%;
+            transform: none;
+            padding: 10px;
+            box-sizing: border-box;
+
+            h1 {
+                font-size: 37px;
+                line-height: 1.5;
+                font-weight: 500;
+              }
+        }
+
+        .flat-button {
+            float: none;
+            font-size: 18px;
+            display: block;
+            margin: 20px auto 0 auto;
+            width: 125px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+        .image-container {
+            position: relative; 
+            width: 330px;
+            height: 200px;
+            top: 50%;
+            right: 0;
+            left: 0;
+            margin: auto;
+            margin-top: 100px;
+            transform: translateY(-50%);
+            box-sizing: border-box;
+        }
+    }
+}
