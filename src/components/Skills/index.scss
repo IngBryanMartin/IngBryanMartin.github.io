@@ -48,12 +48,11 @@
   }
 
   .skills-charts > * {
-    transform: scale(0.6); /* reduce el tamaño de los elementos a la mitad */
+    transform: scale(0.65); /* reduce el tamaño de los elementos a la mitad */
   }
 
   .text-sphere,
   .tagcloud {
-    left: -10%;
     margin-right: -400px;
   }
 
