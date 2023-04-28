@@ -22,3 +22,14 @@
 .tagcloud--item:hover {
     color: #ffff;
 }
+
+@media screen and (max-width: 1200px) {
+    .tagcloud {
+      position: initial;
+      width: 100%;
+      height: 50%;
+      top: 0;
+    left: 0;
+      overflow: visible;
+    }
+  }
