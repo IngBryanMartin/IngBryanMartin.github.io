@@ -1,7 +1,5 @@
-/* Importing google font  */
+/* Importing google font 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
-
-
 
 .tagcloud {
     display: inline-block;
@@ -14,22 +12,11 @@
 }
 
 /* Change color of each text in sphere on hover   */
-.tagcloud--item {
+/* .tagcloud--item {
     color: #49b6d1;
     text-transform: uppercase;
 }
 
 .tagcloud--item:hover {
     color: #ffff;
-}
-
-@media screen and (max-width: 1200px) {
-    .tagcloud {
-      position: initial;
-      width: 100%;
-      height: 50%;
-      top: 0;
-    left: 0;
-      overflow: visible;
-    }
-  }
+} */

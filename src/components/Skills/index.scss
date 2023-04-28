@@ -1,3 +1,6 @@
+/* Importing google font  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
+
 .skills-charts {
   position: absolute;
   width: 50%;
@@ -13,34 +16,50 @@
   overflow: hidden
 }
 
-#myCanvasContainer {
-position: relative;
-height: 100%;
-width: 100%
+.tagcloud {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    font-size: 1.3em;
 }
 
-#myCanvas {
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-margin: auto;
-width: auto;
-height: 100%
+/* Change color of each text in sphere on hover   */
+.tagcloud--item {
+    color: #49b6d1;
+    text-transform: uppercase;
 }
 
-#myCanvasContainer li a {
-font-size: 30px;
-font-family: font-file-82132
+.tagcloud--item:hover {
+    color: #ffff;
 }
 
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
+@media screen and (max-width: 1200px) {
+  .skills-charts
+  {
+    position: initial;
+    display: flex;
+    width: 100%;
+    height: 0;
+    
+    overflow: visible;
+  }
+
+  .skills-charts > * {
+    transform: scale(0.6); /* reduce el tamaño de los elementos a la mitad */
+  }
+
+  .text-sphere,
+  .tagcloud {
+    left: -10%;
+    margin-right: -400px;
+  }
+
+  // .tagcloud
+  // {
+  //   position: initial;
+  //   left: -20%;
+  // }
 }

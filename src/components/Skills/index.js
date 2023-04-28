@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import Loader from 'react-loaders';
 import TextShpere from "./TextShpere.js";
+import TagCloud from "TagCloud";
 
 const Skills = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -15,6 +16,47 @@ const Skills = () => {
                     clearTimeout(timeoutId)
                 }
     }, [])
+
+    const containerRef = useRef(null);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    const texts = [
+        "HTML",
+        "CSS",
+        "GIT",
+        "JavaScript",
+        "React",
+        "Java",
+        ".NET",
+        "C",
+        "PHP",
+        "SQLServer",
+        "MySQL",
+        "Oracle",
+        "StarUML",
+        "Photoshop",
+        "PostMan",
+        "Arduino",
+        "Cybersecurity",
+        "Dialogflow",
+    ];
+    const options = {
+      radius: 300,
+      maxSpeed: "normal",
+      initSpeed: "normal",
+      keep: true,
+      loop: true,
+      lockX: true,
+      lockY: true,
+    };
+
+    TagCloud(container, texts, options);
+
+    return () => {
+      TagCloud(container, [], {});
+    };
+  }, []);
 
     return (
         <>
@@ -45,7 +87,9 @@ const Skills = () => {
                 
             </div>
             <div class="skills-charts">
-            <TextShpere />
+            <div className="text-sphere">
+        <span className="tagcloud" ref={containerRef}></span>
+         </div>
         </div>
         </div>
         <Loader  type=''/>
