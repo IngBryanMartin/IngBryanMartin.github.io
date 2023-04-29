@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import Loader from 'react-loaders';
-import TextShpere from "./TextShpere.js";
 import TagCloud from "TagCloud";
 
 const Skills = () => {
