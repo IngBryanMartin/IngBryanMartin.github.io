@@ -17,38 +17,35 @@
 }
 
 .tagcloud {
-    display: inline-block;
-    top: 0;
-    left: 0;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.0625em;
-    font-size: 1.3em;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.0625em;
+  font-size: 1.3em;
 }
 
-/* Change color of each text in sphere on hover   */
 .tagcloud--item {
-    color: #49b6d1;
-    text-transform: uppercase;
+  color: #49b6d1;
+  text-transform: uppercase;
 }
 
 .tagcloud--item:hover {
-    color: #ffff;
+  color: #ffff;
 }
 
 @media screen and (max-width: 1200px) {
-  .skills-charts
-  {
+  .skills-charts {
     position: initial;
     display: flex;
     width: 100%;
     height: 0;
-    
     overflow: visible;
   }
 
-  .skills-charts > * {
-    transform: scale(0.58); /* reduce el tamaño de los elementos a la mitad */
+  .skills-charts>* {
+    transform: scale(0.58);
   }
 
   .text-sphere,

@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ingvryanmartin.github.io/my-portfolio/",
+  "homepage": "http://ingbryanmartin.github.io/my-portfolio/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
@@ -26,7 +26,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && firebase deploy --only hosting",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",

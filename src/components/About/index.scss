@@ -148,6 +148,7 @@
   from {
     transform: translateY(0px);
   }
+
   to {
     transform: translateY(-2000px);
   }
@@ -161,9 +162,11 @@
     overflow: visible;
     padding-bottom: 400px;
 
-    .stars, .stars2, .stars3 {
-    position: fixed;
-    margin-top: -1500px;
+    .stars,
+    .stars2,
+    .stars3 {
+      position: fixed;
+      margin-top: -1500px;
     }
   }
 }
